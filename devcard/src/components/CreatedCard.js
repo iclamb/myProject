@@ -12,14 +12,16 @@ import Header from "./Header";
 import ProfilePicture from "./ProfilePicture";
 
 const userForms = [defaultUser]
-console.log(userForms);
+
 
 export { userForms };
 
 
 
 export default function CreatedCard({ formData, number, setFormData }){
-    
+    const userLength = userForms.length
+    const index = userLength - 1;
+
     
 
 
@@ -35,7 +37,9 @@ pushObject();
     const firstName = nameSplit[0]
  
 // const checkTech = () => {
-//     const ktech = formData.knownTechnologies;
+
+     const ktech = formData.knownTechnologies;
+     console.log(ktech);
 //     if (ktech.includes('HTML')){
 //         console.log('true')
 //         return 'known-tech'
@@ -51,7 +55,7 @@ const checkBooks = () =>{
         return false
     }
 }
-
+console.log(userForms);
 console.log(formData.favoriteBooks[1])
 
 /**Book Image search */

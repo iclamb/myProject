@@ -12,6 +12,7 @@ export default function CardCreator({ formData, setFormData }) {
     const handleChange = (e) => {
         let key = e.target.value;
         let isChecked = e.target.checked;
+        console.log(isChecked);
         setFormData((formData) => {
           return { ...formData, [key]: isChecked };
         });
@@ -24,17 +25,13 @@ export default function CardCreator({ formData, setFormData }) {
         console.log("Id: " + Id)
 
     }
-    
-    
-    
-
     const handleClick = (e) => {
     e.preventDefault();
     addUser(); 
 
     navigate({ to: `showcase/`, replace: true});
-    }
-   
+    } 
+
     return(
         <div className="dev-container">
             

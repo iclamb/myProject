@@ -28,13 +28,14 @@ export default function App({index, number}){
     githubURL: "",
     twitterURL: "",
     favoriteBooks: "",
+    knownTechnologies: [{
     HTML: false,
     CSS: false,
     JS: false,
     React: false,
     git: false,
     NodeJS: false
-  
+    }]
   });
 
     
