@@ -28,14 +28,12 @@ export default function App({index, number}){
     githubURL: "",
     twitterURL: "",
     favoriteBooks: "",
-    knownTechnologies: [{
-    HTML: false,
-    CSS: false,
-    JS: false,
-    React: false,
+    html: false,
+    css: false,
+    js: false,
+    react: false,
     git: false,
-    NodeJS: false
-    }]
+    jsnode: false
   });
 
     
@@ -54,6 +52,7 @@ export default function App({index, number}){
       
   return(
     <Router routes={routes} location={location}>
+      {/* <header>{JSON.stringify(formData)}</header> */}
       <div>
         <Outlet />
       </div>

@@ -12,7 +12,7 @@ export default function CardCreator({ formData, setFormData }) {
     const handleChange = (e) => {
         let key = e.target.value;
         let isChecked = e.target.checked;
-        console.log(isChecked);
+
         setFormData((formData) => {
           return { ...formData, [key]: isChecked };
         });
@@ -33,7 +33,7 @@ export default function CardCreator({ formData, setFormData }) {
     } 
 
     return(
-        <div className="dev-container">
+        <div className="dev-container" >
             
             <img className="logo" src={img1} alt="Stock"/>
             <h1>Create Your Dev Card</h1>
@@ -58,17 +58,17 @@ export default function CardCreator({ formData, setFormData }) {
                 <p className="tech-know">Technologies You Know</p>
                 <div className="checkbox-container">
                 <label for="html">HTML</label>
-                <input className="checkbox" type="checkbox" value="HTML" onChange={(e) => handleChange(e)}></input>
+                <input className="checkbox" type="checkbox" value="html" onChange={(e) => handleChange(e)}></input>
                 <label for="css">CSS</label>
-                <input className="checkbox" type="checkbox" value="CSS" onChange={(e) => handleChange(e)}></input>
+                <input className="checkbox" type="checkbox" value="css" onChange={(e) => handleChange(e)}></input>
                 <label for="js">JS</label>
-                <input className="checkbox"  type="checkbox" value="JS" onChange={(e) => handleChange(e)}></input>
+                <input className="checkbox"  type="checkbox" value="js" onChange={(e) => handleChange(e)}></input>
                 <label for="react">React</label>
-                <input className="checkbox" type="checkbox" value="React" onChange={(e) => handleChange(e)}></input>
+                <input className="checkbox" type="checkbox" value="react" onChange={(e) => handleChange(e)}></input>
                 <label for="git">git</label>
                 <input className="checkbox" type="checkbox" value="git" onChange={(e) => handleChange(e)}></input>
                 <label for="node">Node.js</label>
-                <input className="checkbox" type="checkbox" value="NodeJS" onChange={(e) => handleChange(e)}></input>
+                <input className="checkbox" type="checkbox" value="jsnode" onChange={(e) => handleChange(e)}></input>
                 </div>
                 <input className="text-box" type="text" name="githubURL"  placeholder="Github URL" onChange={(e) =>{
                             let val = e.target.value
