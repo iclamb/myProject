@@ -15,8 +15,8 @@ import KnownTech from './KnownTech';
 
 
 export default function CreatedCard({ formData }){        
-    let name = formData.fullName.split("");
-    let firstName=name[0];
+    let name = formData.fullName.split(" ");
+    let firstName = name[0];
  
 
       
@@ -29,7 +29,7 @@ return (
         {/* <pre>{JSON.stringify(formData)}</pre> */}
         <div className="left-container">
             <ProfilePicture src={NoImg} icon0={faInfoCircle} icon1={faToolbox} icon2={faMapMarkerAlt} name={formData.fullName} city="Vancouver, Canada" jobTitle="Full Stack Developer" />
-                <Header className="profile-header" title={`Connect with ${firstName} `} />    
+            <Header className="profile-header" title={`Connect with ${firstName} `} gitLink={formData.githubURL}/>    
         </div>
         <div className="right-container">
     <Header className="header" title={`Welcome to ${"Ian's"}'s Corner of the Internet`} icon={faInfoCircle}/>
