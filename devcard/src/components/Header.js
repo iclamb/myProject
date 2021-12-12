@@ -1,13 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCss3Alt, faGitAlt, faHtml5, faJs, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faCss3Alt, faGitAlt, faGithub, faHtml5, faJs, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons';
 
 import React from 'react';
 import BookList from './CheckBooks';
 import  CheckBooks from './CheckBooks';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 
 
-export default function Header({ className, title, icon, text, favBook, checkTech, fbl, html, css, js, react, jsnode, git }){
+export default function Header({ className, title, icon, text, favBook, checkTech, gitLink, webLink, fbl, html, css, js, react, jsnode, git }){
    
     
     return(
@@ -20,15 +21,23 @@ export default function Header({ className, title, icon, text, favBook, checkTec
                         <h3>{title}</h3>
                    
             </div>
-            
+            {gitLink ?  <div className="mini-cards connect">
+                                <span className="fa-icon-tech">
+                                    <a href={gitLink} target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                                </span>
+                                <span className="fa-icon-tech">
+                                    <a href={webLink} target="_blank"><FontAwesomeIcon icon={faGlobe} /></a>
+                                </span>
+                        </div> :
+             null}
             {text && <div className="cc-text-box"><p className="small-text">{text}</p></div>}
             {checkTech ? 
                 <div className="mini-cards">
                     {html ? <span class="fa-Icon-tech" title="html">
-                        <FontAwesomeIcon icon={faHtml5}  />
+                       <FontAwesomeIcon icon={faHtml5}  />
                     </span> : null}
                     {css ?
-                    <span class="fa-Icon-tech" title="css">
+                    <span className="fa-Icon-tech" title="css">
                         <FontAwesomeIcon icon={faCss3Alt}  />
                     </span> : null
                     }

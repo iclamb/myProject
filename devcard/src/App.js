@@ -26,7 +26,7 @@ export default function App({index, number}){
     fullName: "",
     aboutMe: "",
     githubURL: "",
-    twitterURL: "",
+    webLinkURL: "",
     favoriteBooks: "",
     html: false,
     css: false,

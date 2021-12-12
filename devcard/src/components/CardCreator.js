@@ -74,10 +74,10 @@ export default function CardCreator({ formData, setFormData }) {
                             let val = e.target.value
                             setFormData((formData) => {return {...formData, githubURL: val }})
                         }}></input>
-                <input className="text-box" type="text" name="twitterURL"  placeholder="Twitter URL" 
+                <input className="text-box" type="text" name="webURL"  placeholder="Website Address" 
                         onChange={(e) =>{
                             let val = e.target.value
-                            setFormData((formData) => {return {...formData, twitterURL: val }})
+                            setFormData((formData) => {return {...formData, webLinkURL: val }})
                         }}
                 ></input>
                 <input className="text-box" type="text" name="favoriteBooks" placeholder="Favorite Books(separate by comma)" 

@@ -29,12 +29,26 @@ return (
         {/* <pre>{JSON.stringify(formData)}</pre> */}
         <div className="left-container">
             <ProfilePicture src={NoImg} icon0={faInfoCircle} icon1={faToolbox} icon2={faMapMarkerAlt} name={formData.fullName} city="Vancouver, Canada" jobTitle="Full Stack Developer" />
-            <Header className="profile-header" title={`Connect with ${firstName} `} gitLink={formData.githubURL}/>    
+            <Header className="profile-header"
+                    title={`Connect with ${firstName} `}
+                    gitLink={formData.githubURL}
+                    webLink={formData.webLinkURL}
+            />    
         </div>
         <div className="right-container">
-    <Header className="header" title={`Welcome to ${"Ian's"}'s Corner of the Internet`} icon={faInfoCircle}/>
-    <Header className="header" title="About Me" icon={faHandPointRight} text={formData.aboutMe}/>
-    <Header className="header" title="Favorite Books" icon={faBook} favBook={true} fbl={formData.favoriteBooks} />
+    <Header className="header"
+            title={`Welcome to ${firstName}'s Corner of the Internet`}
+            icon={faInfoCircle}/>
+    <Header className="header"
+            title="About Me"
+            icon={faHandPointRight}
+            text={formData.aboutMe}
+    />
+    <Header className="header"
+            title="Favorite Books"
+            icon={faBook} favBook={true}
+            fbl={formData.favoriteBooks}
+    />
     <Header    
             className="header"
             title="Technologies"
