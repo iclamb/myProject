@@ -150,6 +150,11 @@ li {
   height: 100%;
 }
 
+.container {
+  width: 100%;
+  height: 100%;
+}
+
 .left-container {
   width: 40%;
   height: 90%;
@@ -327,7 +332,7 @@ a {
 
 .mini-cards a,
 .mini-cards span {
-  width: 100%;
+  width: 40%;
   height: 100%;
   margin: 2px;
   border-radius: 0.328rem;
@@ -421,14 +426,12 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .header {
-    width: 70%;
-  }
   .profile-header {
     width: 80%;
   }
   .mini-cards span {
     font-size: 3rem;
+    width: 40%;
   }
 }
 

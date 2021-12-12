@@ -28,40 +28,43 @@ return (
     <div className="card-container" id={formData.id}>
         {/* <pre>{JSON.stringify(formData)}</pre> */}
         <div className="left-container">
-            <ProfilePicture src={NoImg} icon0={faInfoCircle} icon1={faToolbox} icon2={faMapMarkerAlt} name={formData.fullName} city="Vancouver, Canada" jobTitle="Full Stack Developer" />
-            <Header className="profile-header"
-                    title={`Connect with ${firstName} `}
-                    gitLink={formData.githubURL}
-                    webLink={formData.webLinkURL}
-            />    
+            
+                <ProfilePicture src={NoImg} icon0={faInfoCircle} icon1={faToolbox} icon2={faMapMarkerAlt} name={formData.fullName} city="Vancouver, Canada" jobTitle="Full Stack Developer" />
+                <Header className="profile-header"
+                        title={`Connect with ${firstName} `}
+                        gitLink={formData.githubURL}
+                        webLink={formData.webLinkURL}
+                />    
         </div>
         <div className="right-container">
-    <Header className="header"
-            title={`Welcome to ${firstName}'s Corner of the Internet`}
-            icon={faInfoCircle}/>
-    <Header className="header"
-            title="About Me"
-            icon={faHandPointRight}
-            text={formData.aboutMe}
-    />
-    <Header className="header"
-            title="Favorite Books"
-            icon={faBook} favBook={true}
-            fbl={formData.favoriteBooks}
-    />
-    <Header    
-            className="header"
-            title="Technologies"
-            icon={faTerminal}
-            checkTech={true}
-            css={formData.css}
-            html={formData.html}
-            js={formData.js}
-            react={formData.react}
-            git={formData.git}
-            jsnode={formData.jsnode}
-    />
-    
+        <div className='container'>
+                <Header className="header"
+                        title={`Welcome to ${firstName}'s Corner of the Internet`}
+                        icon={faInfoCircle}/>
+                <Header className="header"
+                        title="About Me"
+                        icon={faHandPointRight}
+                        text={formData.aboutMe}
+                />
+                
+                <Header    
+                        className="header"
+                        title="Technologies"
+                        icon={faTerminal}
+                        checkTech={true}
+                        css={formData.css}
+                        html={formData.html}
+                        js={formData.js}
+                        react={formData.react}
+                        git={formData.git}
+                        jsnode={formData.jsnode}
+                />
+                <Header className="header"
+                        title="Favorite Books"
+                        icon={faBook} favBook={true}
+                        fbl={formData.favoriteBooks}
+                />
+        </div>
         </div>
     </div>
      

@@ -34,7 +34,7 @@ export default function Header({ className, title, icon, text, favBook, checkTec
             {checkTech ? 
                 <div className="mini-cards">
                     {html ? <span class="fa-Icon-tech" title="html">
-                       <FontAwesomeIcon icon={faHtml5}  />
+                       <FontAwesomeIcon icon={faHtml5} />
                     </span> : null}
                     {css ?
                     <span className="fa-Icon-tech" title="css">
@@ -43,11 +43,11 @@ export default function Header({ className, title, icon, text, favBook, checkTec
                     }
                     {js ?
                     <span className="fa-Icon-tech" title="js">
-                        <FontAwesomeIcon icon={faJs}  />
+                        <FontAwesomeIcon icon={faJs}   />
                     </span> : null}
                     {git ?  
                     <span className="fa-Icon-tech" title="git">
-                        <FontAwesomeIcon icon={faGitAlt}  />
+                        <FontAwesomeIcon icon={faGitAlt} />
                     </span> : null}
                     {jsnode ?
                     <span className="fa-Icon-tech" title="jsnode">
